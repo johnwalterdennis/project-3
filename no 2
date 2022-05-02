@@ -1,0 +1,122 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) { 
+    int p = 1;
+    while (p < 15) {
+    System.out.println("Find Smallest Number");
+    System.out.println("Find the largest Number");
+    System.out.println("quit");
+      
+     Scanner myScan = new Scanner(System.in); 
+      int num = myScan.nextInt();
+    p++;
+       
+     if (num==1){
+     
+    Scanner input = new Scanner(System.in);
+    int[] myArray = new int[10];
+       int i=0;
+       
+      while (i<10) {
+       
+    
+        System.out.println("Please enter number");
+         myArray[i] = input.nextInt();
+       
+        if(myArray[i] ==-1000){ 
+       int temp, size;
+      size = myArray.length;
+
+      for(int f = 0; f<size; f++ ){
+         for(int j = f+1; j<size; j++){
+            if(myArray[f]>myArray[j]){
+               temp = myArray[f];
+               myArray[f]= myArray[j];
+               myArray[j] = temp;
+            }
+         }
+      }
+      System.out.println("The smallest element is "+myArray[size-i]); break;
+       
+      }
+       i++; 
+        }}
+     else if (num==2){
+       Scanner input = new Scanner(System.in);
+    int[] myArray = new int[10];
+       int i=0;
+       
+      while (i<10) {
+       
+    
+        System.out.println("Please enter number");
+         myArray[i] = input.nextInt();
+       
+        if(myArray[i] ==-1000){ 
+       int temp, size;
+      size = myArray.length;
+
+      for(int f = 0; f<size; f++ ){
+         for(int j = f+1; j<size; j++){
+            if(myArray[f]<myArray[j]){
+               temp = myArray[f];
+               myArray[f]= myArray[j];
+               myArray[j] = temp;
+            }
+         }
+      }
+      System.out.println("The largest element is "+myArray[0]); break;
+       
+      }
+       i++; 
+        }}
+      if (num==3) {break;
+        }
+      }
+     
+       
+      }}
+
+      
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //Import Scanner
+    //Create a Scanner object
+    
+    //Use a loop that keeps presenting the menu:
+      //Print out the menu
+      //Read in the users choice (int)
+      //If the users choice is 1 
+        //Use a loop that keeps prompting the user for values (-1000) to quit
+        //Read in the number
+          //If the number is smaller than the current smallest
+            //Set the current smallest to this number
+        //The loop should stop when they enter -1000
+        //Display the smallest value
+      //If the users choice is 2
+        //Use a loop that keeps prompting the user for values (-1000) to quit
+        //Read in the number
+        //If the number is larger than the current largest
+          //Set the current largest to this number
+        //The loop should stop when they enter -1000
+        //Display the largest value
+    //The outside loop should end when the users choice was 3.
